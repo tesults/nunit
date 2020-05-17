@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tesults.NUnit</id>
+    <version>1.0.0</version>
+    <title>Tesults NUnit Event Listener</title>
+    <authors>Tesults</authors>
+    <owners>Tesults</owners>
+    <projectUrl>https://www.tesults.com</projectUrl>
+    <license type="file">license.txt</license>
+    <iconUrl>https://www.tesults.com/apple-touch-icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Tesults NUnit Event Listener</description>
+    <releaseNotes>Upload results from NUnit to Tesults.</releaseNotes>
+    <copyright>Copyright 2019 Tesults</copyright>
+    <tags>nunit nunit3 tesults test results automation automated dashboard reporting</tags>
+  </metadata>
+  <files>
+    <file src=".\bin\Release\*.*" target="lib\net472" />
+    <file src="readme.txt" target=""/>
+    <file src="license.txt" target=""/>
+  </files>
+</package>
