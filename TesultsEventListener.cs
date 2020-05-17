@@ -145,10 +145,14 @@ namespace Tesults.NUnit
                 var testCase = new Dictionary<string, object>();
                 testCase.Add("name", doc.Root.Attribute("name").Value);
                 testCase.Add("suite", suite);
-                testCase.Add("_Start Time", doc.Root.Attribute("start-time").Value);
-                testCase.Add("_End Time", doc.Root.Attribute("end-time").Value);
-                testCase.Add("_Duration", doc.Root.Attribute("duration").Value);
-
+                try
+                {
+                    testCase.Add("start", new DateTimeOffset(DateTime.Parse(doc.Root.Attribute("start-time").Value)).ToUnixTimeMilliseconds());
+                    testCase.Add("end", new DateTimeOffset(DateTime.Parse(doc.Root.Attribute("end-time").Value)).ToUnixTimeMilliseconds());
+                } catch (Exception)
+                {
+                    // Ignore exceptions related to start and end times
+                }
                 var resultRaw = doc.Root.Attribute("result").Value;
                 var result = "unknown";
                 if (resultRaw.Equals("Passed"))

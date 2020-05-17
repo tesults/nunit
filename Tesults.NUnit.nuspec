@@ -2,8 +2,8 @@
 <package >
   <metadata>
     <id>Tesults.NUnit</id>
-    <version>1.0.0</version>
-    <title>Tesults NUnit Event Listener</title>
+    <version>1.1.0</version>
+    <title>Tesults NUnit Listener</title>
     <authors>Tesults</authors>
     <owners>Tesults</owners>
     <projectUrl>https://www.tesults.com</projectUrl>
@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Tesults NUnit Event Listener</description>
     <releaseNotes>Upload results from NUnit to Tesults.</releaseNotes>
-    <copyright>Copyright 2019 Tesults</copyright>
+    <copyright>Copyright 2020 Tesults</copyright>
     <tags>nunit nunit3 tesults test results automation automated dashboard reporting</tags>
   </metadata>
   <files>
